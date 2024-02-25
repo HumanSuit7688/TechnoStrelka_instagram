@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <title>Фото нашего сына</title>
+</head>
+<body>
+    <header>
+    <div class='MegaFoot'>
+        <div  class='left_footer'><a class='FooterText' href='/'>Фото нашего сына    </a> <span class='another_text'>Теперь в Django</span></div>
+        <div class='right_footer'><span class='exit'> Выйти</span></div>
+    </div>
+    </header>
+    <div class='Main_text'>
+        
+        {{ main }}
+    </div>
+
+    <footer>
+        <div class='MegaHead'>
+            <div  class='HeaderMain'>
+                <a class='HeaderText'>Фото нашего сына</a> 
+                <div class='quote_centre'><span class='motivation_text'><span class='quote'>&rdquo;</span><i>Все везде и сразу</i><span class='quote'>&rdquo;</span></span></div>
+                <div class='header_navigation'>
+                    <ul>
+                        <li> <a href=''>Главная</a> </li>
+                        <li> <a href=''>Команда</a> </li>
+                        <li> <a href=''>Ваши фотографии</a> </li>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='HeaderBottom'><span class='date'>Все было сделано в &copy; 2024 </span><span class='company_name'>Фотоаппарат вашей дочери</span></div>
+
+    </footer>
+</body>
+</html>

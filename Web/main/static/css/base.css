@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{background: #18256a;}
+a{text-decoration: none;}
+
+.MegaFoot{background-color: #2a3eb1; border-radius: 500px; margin-top: 10pt; margin-left: 5pt; margin-right: 5pt;display: flex; justify-content: space-between;}
+.FooterText{font-size: 30pt; color: white; margin-left: 12pt;}
+.another_text{margin-left: 14pt; color:white}
+.exit{color: white;}
+.right_footer{justify-content: flex-end; margin-top: 10pt; margin-right: 10pt;}
+.left_footer{justify-content: flex-start;}
+
+footer{
+    margin-top: 15pt;
+    background-color: #212d76;
+}
+.MegaHead{
+    width: 100%;
+    padding: 10pt 10pt 10pt;
+}
+.header_navigation{
+    margin: 30pt 0;
+}
+
+
+.HeaderText{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;    
+}
+
+.HeaderText:hover{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1.7em;
+    opacity: 1;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;    
+}
+.quote_centre{
+    display: flex;
+    justify-content: center;  
+}
+.motivation_text{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.4;
+    transition: 0.5s;
+    font-family: 'Roboto Slab', serif; 
+}
+.quote {
+    color: #788aff;
+    font-size: 2.9em;
+    position: absolute;
+    margin-top: -16px;
+  }
+.quote:first-of-type {
+    margin-left: -22px;
+  }
+.header_navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.header_navigation ul li a{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.header_navigation ul li a:hover{
+    opacity: 1;
+}
+.HeaderBottom{
+    color: white;
+    padding: 20pt;
+    text-align: center;
+    background-color: #19225b;
+}
+.company_name{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0pt 5pt;
+}
+
+
+@media (max-width:700px) {
+    .header_navigation ul{
+        flex-direction: column;
+    }
+    .header_navigation ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10pt;
+    }
+    
+}
