@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.teamContainer{
+    display: flex;
+}
+
+.card{
+    height: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.workerInfo{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.workerName{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.moreInfo{
+    height: 70px;
+    width: 280px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background:rgb(27, 27,27, .5);
+    color: white;
+    bottom: 340px;
+    transition: .9s;
+}
+
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .moreInfo{
+    height: 200px;
+    bottom: 340px;
+    background: black;
+}
+
+.card:hover .workerInfo{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img{
+    transform: scale(1.2) rotate(-3deg);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}

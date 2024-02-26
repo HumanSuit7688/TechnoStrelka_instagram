@@ -3,12 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-img{
-    height: 300px;
-    width: 300px;
-    border-radius: 3px;
-    transition: .5s;
-}
+
 body{background: #18256a;}
 a{text-decoration: none;}
 
@@ -113,61 +108,6 @@ footer{
     margin-left: 12pt;
     margin-top: 20pt;
     margin-bottom: 100pt;
-}
-
-.teamContainer{
-    display: flex;
-}
-
-.card{
-    height: 300px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
-
-.moreInfo{
-    height: 70px;
-    width: 280px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    background:rgb(27, 27,27, .5);
-    color: white;
-    bottom: 340px;
-    transition: .9s;
-}
-
-.workerName{
-    margin: 10px;
-    font-size: 40px;
-}
-
-.workerInfo{
-    font-size: 20px;
-    margin: 20px;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
-}
-
-.card:hover{
-    cursor: pointer;
-}
-
-.card:hover .moreInfo{
-    height: 200px;
-    bottom: 340px;
-    background: black;
-}
-
-.card:hover .workerInfo{
-    opacity: 1;
-    visibility: visible;
-}
-
-.card:hover img{
-    transform: scale(1.2) rotate(-3deg);
 }
 
 @media (max-width:700px) {
