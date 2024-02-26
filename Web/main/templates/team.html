@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block pageTitle %}Разработчики{% endblock pageTitle %}
+
+{% block favicon %}{% static 'img/clown.png' %}{% endblock favicon %}
+
 {% block imports %}<link rel="stylesheet" type="text/css" href="{% static 'css/team.css' %}" />{% endblock imports %}
 {% block content %}
 <div class='teamContainer'>

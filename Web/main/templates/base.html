@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <link rel="shortcut icon" type="x-icon" href='{% block favicon %}{% static 'img/cam.png' %}{% endblock favicon %}'>
     {% block imports %}{% endblock imports %}
     
-    <title>Фото нашего сына</title>
+    <title>{% block pageTitle %}Фото нашего сына{% endblock pageTitle %}</title>
 </head>
 <body>
     <header>
