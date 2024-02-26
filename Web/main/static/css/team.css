@@ -13,6 +13,8 @@ img{
 
 .teamContainer{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -20,6 +22,7 @@ img{
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    position: relative;
 }
 
 .workerInfo{
@@ -37,13 +40,13 @@ img{
 
 .moreInfo{
     height: 70px;
-    width: 280px;
+    width: 300px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
     background:rgb(27, 27,27, .5);
     color: white;
-    bottom: 340px;
+    bottom: 0px;
     transition: .9s;
 }
 
@@ -54,7 +57,7 @@ img{
 
 .card:hover .moreInfo{
     height: 200px;
-    bottom: 340px;
+    bottom: 0px;
     background: black;
 }
 
