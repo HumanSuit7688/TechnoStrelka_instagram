@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-body{background: #18256a;}
+body{
+    background: #18256a;
+
+}
 a{text-decoration: none;}
 
 .MegaFoot{background-color: #2a3eb1; border-radius: 500px; margin-top: 10pt; margin-left: 5pt; margin-right: 5pt;display: flex; justify-content: space-between;}
@@ -17,6 +20,7 @@ a{text-decoration: none;}
 footer{
     width: 100%;
     background-color: #212d76;
+    animation: fade 1s forwards;
 }
 .MegaHead{
     width: 100%;
@@ -108,6 +112,7 @@ footer{
     margin-left: 12pt;
     margin-top: 20pt;
     margin-bottom: 100pt;
+    animation: fade 1s forwards;
 }
 
 @media (max-width:700px) {
@@ -120,4 +125,15 @@ footer{
         margin: 10pt;
     }
     
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(50vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
