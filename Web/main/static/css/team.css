@@ -9,6 +9,7 @@ img{
     width: 300px;
     border-radius: 3px;
     transition: .5s;
+    user-select: none;
 }
 
 .teamContainer{
@@ -31,11 +32,13 @@ img{
     visibility: hidden;
     opacity: 0;
     transition: .4s;
+
 }
 
 .workerName{
     margin: 10px;
     font-size: 40px;
+    user-select: none;
 }
 
 .moreInfo{
@@ -48,6 +51,7 @@ img{
     color: white;
     bottom: 0px;
     transition: .9s;
+    user-select: none;
 }
 
 

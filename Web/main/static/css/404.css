@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 600px;
+    display: inline-block;
+    justify-content: center;
+    color: #181f4a;
+    user-select: none;
+    outline: solid thick #181f4a;
+    line-height: 450px;
+    margin-bottom: 50px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}

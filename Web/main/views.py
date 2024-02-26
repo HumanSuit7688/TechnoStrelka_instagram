@@ -6,3 +6,6 @@ def index(request):
 
 def team(request):
     return render(request,'team.html')
+
+def NotFound(request, exception=None):
+    return render(request,'404.html',status=404)

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageTitle %}Вы попали не туда{% endblock pageTitle %}
+
+{% block favicon %}{% static 'img/404.png' %}{% endblock favicon %}
+{% block imports %}<link rel="stylesheet" type="text/css" href="{% static 'css/404.css' %}" />{% endblock imports %}
+
+{% block content %}
+<div class='error'>
+    <h1>404</h1>
+    
+</div>
+<h3>Ошибки случаются, но не каждый может их исправить</h3>
+{% endblock content %}
