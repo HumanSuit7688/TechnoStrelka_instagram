@@ -13,9 +13,9 @@
         <div class='right_footer'><span class='exit'> Выйти</span></div>
     </div>
     </header>
-    <div class='Main_text'>
-        
-        {{ main }}
+
+    <div class='MainText'>
+        {% block content %}{% endblock content %}
     </div>
 
     <footer>
@@ -25,8 +25,8 @@
                 <div class='quote_centre'><span class='motivation_text'><span class='quote'>&rdquo;</span><i>Все везде и сразу</i><span class='quote'>&rdquo;</span></span></div>
                 <div class='header_navigation'>
                     <ul>
-                        <li> <a href=''>Главная</a> </li>
-                        <li> <a href=''>Команда</a> </li>
+                        <li> <a href='/'>Главная</a> </li>
+                        <li> <a href='/team/'>Команда</a> </li>
                         <li> <a href=''>Ваши фотографии</a> </li>
     
                     </ul>

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class='teamContainer'>
+<div class='card'>
+    <img src="{% static 'img/nikitos.jpg' %}" alt='Никита'>
+    <div class='moreInfo'>
+        <h1 class='workerName'>Никита</h1>
+        <p class='workerInfo'>Наш программист, помогал создавать внешний вид. Вот настолько но крут</p>
+    </div>
+</div>
+<div class='card'>
+    <img src="{% static 'img/yaros.jpg' %}" alt='Ярослав'>
+    <div class='moreInfo'>
+        <h1 class='workerName'>Ярослав</h1>
+        <p class='workerInfo'>Наш программист, он тоже делал внешний вид. Возможно фронт это очень полезно</p>
+    </div>
+</div>
+<div class='card'>
+    <img src="{% static 'img/ivanos.jpg' %}" alt='Иван'>
+    <div class='moreInfo'>
+        <h1 class='workerName'>Иван</h1>
+        <p class='workerInfo'>Наш программист, он написал весь бекэнд. Он слишком крут, но и настолько же несчастен</p>
+    </div>
+</div>
+
+<div class='card'>
+    <img src="{% static 'img/leshos.jpg' %}" alt='Алексей'>
+    <div class='moreInfo'>
+        <h1 class='workerName'>Алексей</h1>
+        <p class='workerInfo'>Наш дизайнер. Он отвечает за крутость внешнего вида. Спасибо ему за детство</p>
+    </div>
+</div>
+</div>
+{% endblock content %}
