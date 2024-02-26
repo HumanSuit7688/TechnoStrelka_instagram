@@ -17,9 +17,15 @@ h1{
     outline: solid thick #181f4a;
     line-height: 450px;
     margin-bottom: 50px;
+    transition: .5s;
+}
+
+h1:hover{
+    line-height: 550px;
 }
 h3{
     display: flex;
     justify-content: center;
+    user-select: none;
     opacity: 0.5;
 }
