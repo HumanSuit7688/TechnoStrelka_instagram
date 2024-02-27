@@ -10,12 +10,24 @@ body{
 }
 a{text-decoration: none;}
 
-.MegaFoot{background-color: #2a3eb1; border-radius: 500px; margin-top: 10pt; margin-left: 5pt; margin-right: 5pt;display: flex; justify-content: space-between;}
+
+
+.MegaFoot{
+    background-color: #2a3eb1; 
+    border-radius: 500px; 
+    margin-top: 10pt; 
+    margin-left: 5pt; 
+    margin-right: 5pt;
+    display: flex; 
+    justify-content: space-between;
+  
+}
 .FooterText{font-size: 30pt; color: white; margin-left: 12pt;}
 .another_text{margin-left: 14pt; color:white}
 .exit{color: white;}
 .right_footer{justify-content: flex-end; margin-top: 10pt; margin-right: 10pt;}
 .left_footer{justify-content: flex-start;}
+
 
 footer{
     width: 100%;
