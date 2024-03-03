@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #18256a;
+    background: #25283D;
 
 }
 a{text-decoration: none;}
@@ -13,19 +13,61 @@ a{text-decoration: none;}
 
 
 .MegaFoot{
-    background-color: #2a3eb1; 
-    border-radius: 500px; 
-    margin-top: 10pt; 
-    margin-left: 5pt; 
-    margin-right: 5pt;
+    background-color: #8f3985; 
+    height: 90px;
+    width: 100%;
     display: flex; 
     justify-content: space-between;
   
 }
-.FooterText{font-size: 30pt; color: white; margin-left: 12pt;}
-.another_text{margin-left: 14pt; color:white}
+.FooterText{
+    font-size: 40pt;
+    color: white;
+    margin-left: 12pt;
+}
+.another_text{ 
+    color:white;
+}
+.another_text p{
+    margin-left: 12pt;
+    opacity: 0.8;
+}
 .exit{color: white;}
-.right_footer{justify-content: flex-end; margin-top: 10pt; margin-right: 10pt;}
+
+
+.right_footer{
+    justify-content: flex-end; 
+    margin-top: 20pt; 
+    margin-right: 10pt;}
+
+.right_footer ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+}
+
+
+.white_shit{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+}
+
+.right_footer ul li a{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.right_footer ul li a:hover {
+
+    opacity: 1;
+
+}
+
 .left_footer{justify-content: flex-start;}
 
 
