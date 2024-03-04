@@ -79,6 +79,7 @@ footer{
 .MegaHead{
     width: 100%;
     padding: 10pt 10pt 10pt;
+    background-color: #32ba90;
 }
 .header_navigation{
     margin: 30pt 0;
@@ -89,23 +90,12 @@ footer{
     color: white;
     margin: 20pt;
     text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
+    font-size: 3em;
     display: flex;
     justify-content: center;    
+    font-family: sans-serif;
 }
 
-.HeaderText:hover{
-    color: white;
-    margin: 20pt;
-    text-decoration: none;
-    font-size: 1.7em;
-    opacity: 1;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;    
-}
 .quote_centre{
     display: flex;
     justify-content: center;  
@@ -113,11 +103,10 @@ footer{
 .motivation_text{
     color: white;
     margin: 20pt;
-    text-decoration: none;
-    font-size: 1em;
-    opacity: 0.4;
-    transition: 0.5s;
-    font-family: 'Roboto Slab', serif; 
+    font-size: 2em;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 .quote {
     color: #788aff;
@@ -147,19 +136,30 @@ footer{
     opacity: 1;
 }
 .HeaderBottom{
-    color: white;
+    position: relative;
+    color: black;
     padding: 20pt;
     text-align: center;
-    background-color: #19225b;
+    background-color: #69ddff;
+    height: 150pt;
+    padding-top: 5%;
+    
 }
+
 .company_name{
-    opacity: 0.7;
+    opacity: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0pt 5pt;
 }
 
+.date{
+    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-weight: thin;
+    opacity: 0.5;
+
+}
 
 .MainText{
     color: white;
