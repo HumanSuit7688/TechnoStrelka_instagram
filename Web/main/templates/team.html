@@ -4,36 +4,47 @@
 
 {% block favicon %}{% static 'img/clown.png' %}{% endblock favicon %}
 
-{% block imports %}<link rel="stylesheet" type="text/css" href="{% static 'css/team.css' %}" />{% endblock imports %}
+{% block imports %}<link rel="stylesheet" type="text/css" href="{% static 'css/team_new.css' %}" />{% endblock imports %}
 {% block content %}
+
+<div class='OurTeam'><span>Наша команда</span></div>
+
 <div class='teamContainer'>
-<div class='card'>
-    <img src="{% static 'img/nikitos.jpg' %}" alt='Никита' draggable="false">
-    <div class='moreInfo'>
-        <h1 class='workerName'>Никита</h1>
-        <p class='workerInfo'>Наш программист, помогал создавать внешний вид. Вот настолько он крут</p>
+<div class='card-left'>
+    <img src="{% static 'img/nikitos_2.png' %}" alt='Никита' draggable="false">
+    <div class='moreInfo-left'>
+        <h1 class='workerName'>НИКИТА - <i>программист</i></h1>
+        <div class='about'>
+            <p class='workerInfo'>Помогал создавать внешний вид. Вот настолько он крут</p>
+        </div>
     </div>
 </div>
-<div class='card'>
-    <img src="{% static 'img/yaros.jpg' %}" alt='Ярослав' draggable="false">
-    <div class='moreInfo'>
-        <h1 class='workerName'>Ярослав</h1>
-        <p class='workerInfo'>Наш программист, он тоже делал внешний вид. Возможно фронт это очень полезно</p>
+<div class='card-right'>
+    <img src="{% static 'img/yaros_2.png' %}" alt='Ярослав' draggable="false">
+    <div class='moreInfo-right'>
+        <h1 class='workerName'>ЯРОСЛАВ - <i>программист</i></h1>
+        <div class='about'>
+            <p class='workerInfo'>Он тоже делал внешний вид. Возможно фронт это очень полезно</p>
+        </div>
     </div>
 </div>
-<div class='card'>
-    <img src="{% static 'img/ivanos.jpg' %}" alt='Иван' draggable="false">
-    <div class='moreInfo'>
-        <h1 class='workerName'>Иван</h1>
-        <p class='workerInfo'>Наш программист, он написал весь бекэнд. Он слишком крут, но и настолько же несчастен</p>
+<div class='card-left'>
+    <img src="{% static 'img/ivanos_2.png' %}" alt='Иван' draggable="false">
+    <div class='moreInfo-left'>
+        <h1 class='workerName'>ИВАН - <i>программист</i></h1>
+        <div class='about'>
+            <p class='workerInfo'>Он написал весь бекэнд. Он слишком крут, но и настолько же несчастен</p>
+        </div>
     </div>
 </div>
 
-<div class='card'>
-    <img src="{% static 'img/leshos.jpg' %}" alt='Алексей' draggable="false">
-    <div class='moreInfo'>
-        <h1 class='workerName'>Алексей</h1>
-        <p class='workerInfo'>Наш дизайнер. Он отвечает за крутость внешнего вида. Спасибо ему за детство</p>
+<div class='card-right'>
+    <img src="{% static 'img/leshos_2.png' %}" alt='Алексей' draggable="false">
+    <div class='moreInfo-right'>
+        <h1 class='workerName'>АЛЕКСЕЙ - <i>дизайнер</i></h1>
+        <div class='about'>
+            <p class='workerInfo'>Он отвечает за крутость внешнего вида. Спасибо ему за детство</p>
+        </div>
     </div>
 </div>
 
