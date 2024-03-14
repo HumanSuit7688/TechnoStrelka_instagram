@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
+from main.views import RegisterView
+
 urlpatterns = [
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
     path('admin/', admin.site.urls),
@@ -14,7 +16,8 @@ urlpatterns = [
     path('team/',m_view.team),
     path('404/',m_view.NotFound),
     path('welcome/', w_view.main),
-    path('create_cookie/', m_view.create_cookie)
+    path('create_cookie/', m_view.create_cookie),
+    path('register/', RegisterView.as_view(success_url='/'), name='register'),
     
 ]
 

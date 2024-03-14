@@ -2,6 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import main.functions as db
 from django.shortcuts import redirect
+from django.views.generic import FormView
+from django.views.generic.edit import CreateView
+from main.models import User
+
+
+class RegisterView(CreateView):
+    model = User
+
+    template_name = 'register.html'
+    fields = '__all__'
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
+
 
 def check_login(cookie):
     if cookie and 'login' in cookie:
