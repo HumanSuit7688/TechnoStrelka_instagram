@@ -13,7 +13,8 @@ urlpatterns = [
     path('',m_view.index),
     path('team/',m_view.team),
     path('404/',m_view.NotFound),
-    path('welcome/', w_view.main)
+    path('welcome/', w_view.main),
+    path('create_cookie/', m_view.create_cookie)
     
 ]
 

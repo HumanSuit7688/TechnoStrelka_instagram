@@ -17,7 +17,13 @@
             <ul>
                 <li> <a href='/'>Главная</a> </li>
                 <li> <a href='/team/'>Команда</a> </li>
-                <li> <a href=''>Ваши фотографии</a> </li>
+                {% if user_login %}
+                <li> <a href=''>{{ user_login }}</a> </li>
+                {% else %}
+                <li> <a href='/welcome/'>Регистрация</a> </li>
+
+                {% endif %}
+                
             </ul>
     </div>
     </div>
