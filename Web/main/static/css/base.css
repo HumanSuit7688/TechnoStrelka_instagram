@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #18256a;
+    background: #25283D;
 
 }
 a{text-decoration: none;}
@@ -13,19 +13,66 @@ a{text-decoration: none;}
 
 
 .MegaFoot{
-    background-color: #2a3eb1; 
-    border-radius: 500px; 
-    margin-top: 10pt; 
-    margin-left: 5pt; 
-    margin-right: 5pt;
+    background-color: #8f3985; 
+    height: 90px;
+    width: 100%;
     display: flex; 
     justify-content: space-between;
   
 }
-.FooterText{font-size: 30pt; color: white; margin-left: 12pt;}
-.another_text{margin-left: 14pt; color:white}
+.FooterText{
+    font-size: 40pt;
+    color: white;
+    margin-left: 12pt;
+}
+.another_text{ 
+    color:white;
+}
+.another_text p{
+    margin-left: 12pt;
+    opacity: 0.8;
+}
 .exit{color: white;}
-.right_footer{justify-content: flex-end; margin-top: 10pt; margin-right: 10pt;}
+
+
+.right_footer{
+    justify-content: flex-end; 
+    margin-top: 20pt; 
+    margin-right: 8%;}
+
+.right_footer ul{
+        
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+}
+
+.right_footer ul li{
+    position: relative;
+}
+
+
+.white_shit{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+}
+
+.right_footer ul li a{
+    color: white;
+    margin: 20pt;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.right_footer ul li a:hover {
+
+    opacity: 1;
+
+}
+
 .left_footer{justify-content: flex-start;}
 
 
@@ -37,6 +84,7 @@ footer{
 .MegaHead{
     width: 100%;
     padding: 10pt 10pt 10pt;
+    background-color: #32ba90;
 }
 .header_navigation{
     margin: 30pt 0;
@@ -47,23 +95,12 @@ footer{
     color: white;
     margin: 20pt;
     text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
+    font-size: 3em;
     display: flex;
     justify-content: center;    
+    font-family: sans-serif;
 }
 
-.HeaderText:hover{
-    color: white;
-    margin: 20pt;
-    text-decoration: none;
-    font-size: 1.7em;
-    opacity: 1;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;    
-}
 .quote_centre{
     display: flex;
     justify-content: center;  
@@ -71,11 +108,10 @@ footer{
 .motivation_text{
     color: white;
     margin: 20pt;
-    text-decoration: none;
-    font-size: 1em;
-    opacity: 0.4;
-    transition: 0.5s;
-    font-family: 'Roboto Slab', serif; 
+    font-size: 2em;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 .quote {
     color: #788aff;
@@ -105,19 +141,30 @@ footer{
     opacity: 1;
 }
 .HeaderBottom{
-    color: white;
+    position: relative;
+    color: black;
     padding: 20pt;
     text-align: center;
-    background-color: #19225b;
+    background-color: #69ddff;
+    height: 150pt;
+    padding-top: 5%;
+    
 }
+
 .company_name{
-    opacity: 0.7;
+    opacity: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0pt 5pt;
 }
 
+.date{
+    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-weight: thin;
+    opacity: 0.5;
+
+}
 
 .MainText{
     color: white;
@@ -126,6 +173,27 @@ footer{
     margin-bottom: 100pt;
     animation: fade 1s forwards;
 }
+
+
+.right_footer ul li ul.dropdown_user_menu{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    flex-direction: column;
+    background-color: #8f3985;
+    display: none;
+}
+.right_footer ul li ul.dropdown_user_menu li{
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.3);
+    
+}
+
+.right_footer ul li:hover ul.dropdown_user_menu{
+    display: block;
+}
+
 
 @media (max-width:700px) {
     .header_navigation ul{
@@ -138,6 +206,10 @@ footer{
     }
     
 }
+
+
+
+
 
 @keyframes fade {
     from{

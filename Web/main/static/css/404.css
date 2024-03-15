@@ -12,9 +12,9 @@ h1{
     font-size: 600px;
     display: inline-block;
     justify-content: center;
-    color: #181f4a;
+    color: #07beb9;
     user-select: none;
-    outline: solid thick #181f4a;
+    outline: solid thick #07beb9;
     line-height: 450px;
     margin-bottom: 50px;
     transition: .5s;
@@ -25,6 +25,7 @@ h1:hover{
 }
 h3{
     display: flex;
+    color: #32ba90;
     justify-content: center;
     user-select: none;
     opacity: 0.5;

@@ -12,9 +12,29 @@
 <body>
     <header>
     <div class='MegaFoot'>
-        <div  class='left_footer'><a class='FooterText' href='/'>Фото нашего сына    </a> <span class='another_text'>Теперь в Django</span></div>
-        <div class='right_footer'><span class='exit'> Выйти</span></div>
+        <div  class='left_footer'><a class='FooterText' href='/'><b>Фото нашего сына</b>    </a> <span class='another_text'><i><p>ТЕПЕРЬ в Django</p></i></span></div>
+        <div class='right_footer'>
+            <ul>
+                <li> <a href='/create_cookie/'>Главная</a> </li>
+                <li> <a href='/team/'>Команда</a> </li>
+                {% if user_login %}
+                <li> 
+                    <a href='#'>{{ user_login }}</a> 
+                    <ul class='dropdown_user_menu'>
+                        <li><a href='#'>помогите</a></li>
+                        <li><a href='#'>настройки</a></li>
+                        <li><a href='#'>выход</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li> <a href='/register/'>Регистрация</a> </li>
+
+                {% endif %}
+                
+            </ul>
     </div>
+    </div>
+    <div class='white_shit'></div>
     </header>
 
     <div class='MainText'>
@@ -24,19 +44,12 @@
     <footer>
         <div class='MegaHead'>
             <div  class='HeaderMain'>
-                <a class='HeaderText'>Фото нашего сына</a> 
-                <div class='quote_centre'><span class='motivation_text'><span class='quote'>&rdquo;</span><i>Все везде и сразу</i><span class='quote'>&rdquo;</span></span></div>
-                <div class='header_navigation'>
-                    <ul>
-                        <li> <a href='/'>Главная</a> </li>
-                        <li> <a href='/team/'>Команда</a> </li>
-                        <li> <a href=''>Ваши фотографии</a> </li>
-    
-                    </ul>
-                </div>
+                <a class='HeaderText'><b>ФОТО НАШЕГО СЫНА</b></a> 
+                <div class='quote_centre'><span class='motivation_text'><i>«Все везде и сразу»</i></span></span></div>
             </div>
         </div>
-        <div class='HeaderBottom'><span class='date'>Все было сделано в &copy; 2024 </span><span class='company_name'>Фотоаппарат вашей дочери</span></div>
+        
+        <div class='HeaderBottom'><div class='make_centre'></div><span class='date'>Все было сделано в 2024</span><span class='company_name'>Фотоаппарат вашей дочери</span></div>
 
     </footer>
 </body>
