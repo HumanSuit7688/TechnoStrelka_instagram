@@ -17,13 +17,13 @@
             <ul>
                 <li> <a href='/create_cookie/'>Главная</a> </li>
                 <li> <a href='/team/'>Команда</a> </li>
-                {% if user_login %}
+                {% if user.is_authenticated %}
                 <li> 
-                    <a href='#'>{{ user_login }}</a> 
+                    <a href='#'>{{ user.first_name }}</a> 
                     <ul class='dropdown_user_menu'>
                         <li><a href='#'>помогите</a></li>
                         <li><a href='#'>настройки</a></li>
-                        <li><a href='#'>выход</a></li>
+                        <li><a href='{% url 'logout' %}'>выход</a></li>
                     </ul>
                 </li>
                 {% else %}

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block pageTitle %}Регистрация{% endblock pageTitle %}
+{% block pageTitle %}Логин{% endblock pageTitle %}
 
 {% block favicon %}{% static 'img/door.png' %}{% endblock favicon %}
 
@@ -10,18 +10,14 @@
 {% endblock imports %}
 {% block content %}
 
-<div class='OurTeam'><span>Бери викингов</span></div>
+<div class='OurTeam'><span>Добро пожаловать путник</span></div>
 <div class='container'>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-secondary">Зарегаться</button>
+        <button type="submit" class="btn btn-secondary">Залететь</button>
     </form>
 </div>
 
-<div class='go_to_login'>
-    
-<a href ='/login/'>На самом деле у меня есть уже аккаунт</a>
-</div>
 
 {% endblock content %}

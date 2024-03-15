@@ -5,18 +5,16 @@ from django.shortcuts import redirect
 from django.views.generic import FormView
 from django.views.generic.edit import CreateView
 from main.models import User
+from main.forms import NewUserForm
 
-
-class RegisterView(CreateView):
-    model = User
+class RegisterView(FormView):
 
     template_name = 'register.html'
-    fields = '__all__'
+    form_class = NewUserForm
 
     def form_valid(self, form):
         form.save()
         return super().form_valid(form)
-
 
 def check_login(cookie):
     if cookie and 'login' in cookie:
