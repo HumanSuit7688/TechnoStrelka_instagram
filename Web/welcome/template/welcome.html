@@ -2,16 +2,98 @@
 <html>
   <head>
     <title>Добро Пожаловать!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
   </head>
-  
-  <body>
-    <header>
-      <h1>Добро Пожаловать на Фото Нашего Сына!</h1>
-    </header>
 
-    <footer>
-      
-    </footer>
+  <body>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="https://static.vecteezy.com/system/resources/previews/010/675/040/mp4/concept-g1-abstract-fluid-blue-purple-gradient-background-with-colorful-wave-animation-free-video.mp4" type="video/mp4">
+    </video>
+    <div class = "main">
+      <h1  class="h1">Добро Пожаловать на Фото Нашего Сына!</h1>
+      <div class="all">
+        <form action="">
+          <span class="switch">
+            <input type="checkbox" id="switcher">
+            <label for="switcher"></label>
+          </span>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
 
+<style>
+  .main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    align-items: center;
+  }
+  .all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+  }
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .switch{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .switch input{
+    appearance: none;
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    outline: 2px;
+  }
+  .switch input::before,
+  .switch input::after{
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    font-weight: bolder;
+  }
+  .switch input::before{
+    content: "Логин";
+    left: 60px;
+    height: 2.5vh;
+  }
+  .switch input::after{
+    content: "Регистрация";
+    right: 60px;
+    height: 2.5vh;
+  }
+</style>
