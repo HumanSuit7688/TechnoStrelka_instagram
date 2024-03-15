@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pageTitle %}Логин{% endblock pageTitle %}
+
+{% block favicon %}{% static 'img/door.png' %}{% endblock favicon %}
+
+{% block imports %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/team_new.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}" />
+{% endblock imports %}
+{% block content %}
+
+<div class='OurTeam'><span>Добро пожаловать путник</span></div>
+<div class='container'>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondary">Залететь</button>
+    </form>
+</div>
+
+
+{% endblock content %}

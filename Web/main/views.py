@@ -4,51 +4,34 @@ import main.functions as db
 from django.shortcuts import redirect
 from django.views.generic import FormView
 from django.views.generic.edit import CreateView
-from main.models import User
+from django.contrib.auth.models import User
+from main.forms import NewUserForm
+from django.contrib.auth import logout
+from django.contrib.auth import login
 
 
-class RegisterView(CreateView):
-    model = User
+class RegisterView(FormView):
 
     template_name = 'register.html'
-    fields = '__all__'
-
-    def form_valid(self, form):
-        form.save()
+    form_class = NewUserForm
+   
+    def form_valid(self, form): 
+        print(form)
+        user = form.save()
+        login(self.request, user)
         return super().form_valid(form)
 
+def Logout_view(request):
+    logout(request)
+    return redirect('/')
 
-def check_login(cookie):
-    if cookie and 'login' in cookie:
-        return db.get_user(cookie['login'])
-    return None
 
 def index(request):
-    user = check_login(request.COOKIES)
-    if user:
-        return render(request,'base.html', {'user_login':user['nickname']})
-    else:
-         return render(request,'base.html')
+    return render(request,'base.html')
 
 def team(request):
-    user = check_login(request.COOKIES)
-    if user:
+   return render(request,'team.html')
 
-        return render(request,'team.html', {'user_login':user['nickname']})
-    else:
-        return render(request,'team.html')
-
-def create_cookie(request):
-    data = {'login':'test','nickname':'adolf','password':'mega_gay'}
-    try:
-        db.delete_user(data['login'])
-    except:
-        pass
-    db.add_user(data)
-
-    response = redirect('/')
-    response.set_cookie('login',data['login'])
-    return response
 
 
 def NotFound(request, exception=None):

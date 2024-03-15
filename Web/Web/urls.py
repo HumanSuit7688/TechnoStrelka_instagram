@@ -8,6 +8,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
 from main.views import RegisterView
+from django.contrib.auth.views import LoginView, LogoutView
+
 
 urlpatterns = [
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
@@ -19,6 +21,8 @@ urlpatterns = [
     path('settings/',m_view.Settings),
     path('create_cookie/', m_view.create_cookie),
     path('register/', RegisterView.as_view(success_url='/'), name='register'),
+    path('login/', LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', m_view.Logout_view, name='logout')
     
 ]
 
