@@ -16,6 +16,7 @@ urlpatterns = [
     path('team/',m_view.team),
     path('404/',m_view.NotFound),
     path('welcome/', w_view.main),
+    path('settings/',m_view.Settings),
     path('create_cookie/', m_view.create_cookie),
     path('register/', RegisterView.as_view(success_url='/'), name='register'),
     

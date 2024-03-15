@@ -57,4 +57,12 @@ def NotFound(request, exception=None):
         return render(request,'404.html',{'user_login':user['nickname']},status=404)
     else:
         return render(request,'404.html',status=404)
+    
+def Settings(request):
+    user = check_login(request.COOKIES)
+    if user:
+
+        return render(request,'settings.html', {'user_login':user['nickname']})
+    else:
+        return render(request,'settings.html')
 
