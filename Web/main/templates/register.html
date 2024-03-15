@@ -6,22 +6,25 @@
 
 {% block imports %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/team_new.css' %}" />
-<script src="{% static "js/shit.js" %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}" />
+
 {% endblock imports %}
 {% block content %}
 
 <div class='OurTeam'><span>Бери викингов</span></div>
-<div class='container'>
+<div class='register_form'>
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
+        {% comment %} <div class="error">{{ form.username.errors }}</div>
+        <div class='forma'><span>Логин: </span>{{ form.username }}</div>
+        <div class='forma'><span>Ник: </span>{{ form.first_name }}</div>
+        <div class='forma'><span>Пароль: </span>{{ form.password1 }}</div> {% endcomment %}
+        {{form.as_p}}
         <button type="submit" class="btn btn-secondary">Зарегаться</button>
     </form>
+    <a class='login_go' href ='/login/'>На самом деле у меня есть уже аккаунт</a>
 </div>
 
-<div class='go_to_login'>
-    
-<a href ='/login/'>На самом деле у меня есть уже аккаунт</a>
-</div>
+
 
 {% endblock content %}

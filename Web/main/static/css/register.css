@@ -1,0 +1,32 @@
+.register_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.forma{
+    margin:5px;
+}
+
+
+.login_go{
+    color: #69ddff;
+    border: 1px solid #69ddff;
+    padding: 10px;
+    transition: .5s;
+}
+
+.login_go:hover{
+    opacity: .7;
+    padding: 15px;
+}
+
+

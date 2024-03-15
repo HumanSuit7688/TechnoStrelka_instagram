@@ -7,15 +7,18 @@ from django.views.generic.edit import CreateView
 from main.models import User
 from main.forms import NewUserForm
 from django.contrib.auth import logout
+from django.contrib.auth import login
 
 
 class RegisterView(FormView):
 
     template_name = 'register.html'
     form_class = NewUserForm
-
-    def form_valid(self, form):
-        form.save()
+   
+    def form_valid(self, form): 
+        print(form)
+        user = form.save()
+        login(self.request, user)
         return super().form_valid(form)
 
 def Logout_view(request):

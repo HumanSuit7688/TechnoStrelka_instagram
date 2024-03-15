@@ -12,7 +12,7 @@ class NewUserForm(UserCreationForm):
         user = super().save(commit=False)
         user.first_name = self.cleaned_data['first_name']
         user.password1 = self.cleaned_data['password1']
+
         if commit:
             user.save()
-            login(self.request, user)
         return user
