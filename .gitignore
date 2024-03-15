@@ -1,3 +1,5 @@
 Web/*/_pycache_
 *.pyc
 venv/
+ven/
+db.sqlite3
