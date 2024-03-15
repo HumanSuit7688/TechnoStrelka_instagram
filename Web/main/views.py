@@ -4,7 +4,7 @@ import main.functions as db
 from django.shortcuts import redirect
 from django.views.generic import FormView
 from django.views.generic.edit import CreateView
-from main.models import User
+from django.contrib.auth.models import User
 from main.forms import NewUserForm
 
 class RegisterView(FormView):
